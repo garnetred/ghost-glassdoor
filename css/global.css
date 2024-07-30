@@ -1,23 +1,12 @@
-/* "more unreads" button, enable desktop notifications banner, and mention badge */
-.p-channel_sidebar__banner--unreads, .p-workspace_banner__desktop-notifications, .c-mention_badge {
+body {
+  overflow: scroll !important;
+  position: initial !important;
+}
+
+div[id^="Hardsell"] {
   display: none !important;
 }
 
-#activity {
+div[id^="hardsell"] {
   display: none !important;
-}
-
-
-.c-message_kit__hidden_message_blur {
-  filter: blur(0) !important;
-}
-
-.c-message_kit__hidden_message_blur * {
-  pointer-events: auto !important;
-}
-
-[class*="truncate"] {
-  overflow: visible !important;
-  word-break: normal !important;
-  -webkit-box-orient: initial !important;
 }
