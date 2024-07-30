@@ -5,7 +5,7 @@
 ## Abstract
 
 This Chrome browser extension allows users to accesss Glassdoor without having to login.
-Note: This extension has not been tested with all the country domains - please open an issue if there's an issue with a specific country's website.
+Note: This extension has not been tested with all the country domains - please open an issue if there's a problem with a specific country's website.
 
 ## Background
 
