@@ -26,5 +26,8 @@ When you navigate to a Slack workspace website, you should no longer be prompted
 
 
 ## Future Changes
-In the future, I hope to port this extension to Firefox as well.
+I'll port this extension to Firefox at some point.
+
+## Attribution
+Woman Detective favicon courtesy of [Google's Noto Emoji People Profession Icons iconpack](https://www.iconarchive.com/show/noto-emoji-people-profession-icons-by-google/10464-woman-detective-icon.html).
 
