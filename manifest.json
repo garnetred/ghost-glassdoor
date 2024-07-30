@@ -1,38 +1,92 @@
 {
-  "manifest_version": 3,
-  "name": "Ghost Glassdoor",
-  "version": "0.0.1",
-  "description": "This allows users to access Glassdoor without logging in.",
-   "permissions": ["scripting"],
-  "icons": {
-    "16": "images/detective-emoji-16.png",
-    "32": "images/detective-emoji-32.png",
-    "48": "images/detective-emoji-48.png",
-    "128": "images/detective-emoji-128.png"
-},
-"background": {
-},
-"web_accessible_resources": [
-  {
-    "resources": ["css/*.css"],
-    "extension_ids": [
-      "lohigdpnlkaabdijopklelgffjopnghf"
-    ]
-    }
-  ],
-"content_scripts": [
-    {
-        "matches": [
+    "manifest_version": 3,
+    "name": "Ghost Glassdoor",
+    "version": "0.0.1",
+    "description": "This allows users to access Glassdoor without logging in.",
+    "permissions": ["scripting"],
+    "icons": {
+        "16": "images/detective-emoji-16.png",
+        "32": "images/detective-emoji-32.png",
+        "48": "images/detective-emoji-48.png",
+        "128": "images/detective-emoji-128.png"
+    },
+    "background": {},
+    "web_accessible_resources": [
+        {
+            "resources": ["css/*.css"],
+            "extension_ids": ["lohigdpnlkaabdijopklelgffjopnghf"]
+        }
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.glassdoor.com/*",
+                "*://*.glassdoor.com/*",
+                "*://*.glassdoor.com/*",
+                "*://*.glassdoor.com/*",
+                "*://*.glassdoor.com/*",
+                "*://*.glassdoor.com/*",
+                "*://*.glassdoor.com/*",
+                "*://*.glassdoor.com.ar/*",
+                "*://*.glassdoor.com.au/*",
+                "*://nl.glassdoor.be/*",
+                "*://fr.glassdoor.be/*",
+                "*://*.glassdoor.com.br/*",
+                "*://*.glassdoor.ca/*",
+                "*://fr.glassdoor.ca/*",
+                "*://*.glassdoor.de/*",
+                "*://*.glassdoor.es/*",
+                "*://*.glassdoor.fr/*",
+                "*://*.glassdoor.com.hk/*",
+                "*://*.glassdoor.co.in/*",
+                "*://*.glassdoor.ie/*",
+                "*://*.glassdoor.it/*",
+                "*://*.glassdoor.com.mx/*",
+                "*://*.glassdoor.nl/*",
+                "*://*.glassdoor.co.nz/*",
+                "*://*.glassdoor.at/*",
+                "*://de.glassdoor.ch/*",
+                "*://*.glassdoor.sg/*",
+                "*://fr.glassdoor.ch/*",
+                "*://*.glassdoor.co.uk/*",
+                "*://*.glassdoor.com/*"
+            ],
+            "css": ["css/global.css"]
+        }
+    ],
+    "host_permissions": [
+        "*://*.glassdoor.com/*",
+        "*://*.glassdoor.com/*",
+        "*://*.glassdoor.com/*",
+        "*://*.glassdoor.com/*",
+        "*://*.glassdoor.com/*",
+        "*://*.glassdoor.com/*",
+        "*://*.glassdoor.com/*",
+        "*://*.glassdoor.com.ar/*",
+        "*://*.glassdoor.com.au/*",
+        "*://nl.glassdoor.be/*",
+        "*://fr.glassdoor.be/*",
+        "*://*.glassdoor.com.br/*",
+        "*://*.glassdoor.ca/*",
+        "*://fr.glassdoor.ca/*",
+        "*://*.glassdoor.de/*",
+        "*://*.glassdoor.es/*",
+        "*://*.glassdoor.fr/*",
+        "*://*.glassdoor.com.hk/*",
+        "*://*.glassdoor.co.in/*",
+        "*://*.glassdoor.ie/*",
+        "*://*.glassdoor.it/*",
+        "*://*.glassdoor.com.mx/*",
+        "*://*.glassdoor.nl/*",
+        "*://*.glassdoor.co.nz/*",
+        "*://*.glassdoor.at/*",
+        "*://de.glassdoor.ch/*",
+        "*://*.glassdoor.sg/*",
+        "*://fr.glassdoor.ch/*",
+        "*://*.glassdoor.co.uk/*",
         "*://*.glassdoor.com/*"
-      ],
-      "css": ["css/global.css"]
+    ],
+    "action": {
+        "default_popup": "popup.html"
     }
-],
-  "host_permissions": [
-    "*://*.glassdoor.com/*"
-  ],
-  "action": {
-      "default_popup": "popup.html"
-  }
-
 }
