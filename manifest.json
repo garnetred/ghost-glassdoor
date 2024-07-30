@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "Hide Slack Activity",
+  "version": "0.0.5",
+  "description": "This hides the activity notification badge icon and the more unreads buttons on the Slack website.",
+   "permissions": ["scripting"],
+  "icons": {
+    "16": "images/slack-emoji-16.png",
+    "32": "images/slack-emoji-32.png",
+    "48": "images/slack-emoji-48.png",
+    "128": "images/slack-emoji-128.png"
+},
+"background": {
+    "service_worker": "scripts/background.js"
+},
+"web_accessible_resources": [
+  {
+    "resources": ["css/*.css"],
+    "extension_ids": [
+      "lohigdpnlkaabdijopklelgffjopnghf"
+    ]
+    }
+  ],
+"content_scripts": [
+    {
+        "matches": [
+        "*://*.app.slack.com/*"
+      ],
+      "css": ["css/global.css"]
+    }
+],
+  "host_permissions": [
+    "*://*.app.slack.com/*"
+  ],
+  "action": {
+      "default_popup": "popup.html"
+  }
+
+}
