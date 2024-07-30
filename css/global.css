@@ -1,8 +1,12 @@
 body {
-  overscroll: scroll !important;
+  overflow: scroll !important;
   position: initial !important;
 }
 
-div[class=^"hardSell"] {
+div[id^="Hardsell"] {
+  display: none !important;
+}
+
+div[id^="hardsell"] {
   display: none !important;
 }

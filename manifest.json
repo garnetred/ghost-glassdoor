@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Hide Slack Activity",
-  "version": "0.0.5",
-  "description": "This hides the activity notification badge icon and the more unreads buttons on the Slack website.",
+  "name": "Ghost Glassdoor",
+  "version": "0.0.1",
+  "description": "This allows users to access Glassdoor without logging in.",
    "permissions": ["scripting"],
   "icons": {
     "16": "images/detective-emoji-16.png",
@@ -23,13 +23,13 @@
 "content_scripts": [
     {
         "matches": [
-        "*://*.app.slack.com/*"
+        "*://*.glassdoor.com/*"
       ],
       "css": ["css/global.css"]
     }
 ],
   "host_permissions": [
-    "*://*.app.slack.com/*"
+    "*://*.glassdoor.com/*"
   ],
   "action": {
       "default_popup": "popup.html"
