@@ -123,6 +123,5 @@
     ],
     "action": {
         "default_popup": "popup.html"
-    },
-    "run_at": "document_start"
+    }
 }
