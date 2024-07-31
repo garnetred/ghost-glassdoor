@@ -10,11 +10,46 @@
         "48": "images/detective-emoji-48.png",
         "128": "images/detective-emoji-128.png"
     },
-    "background": {},
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "{6b798ead-3d2d-453d-b7ef-a9733fab937a}"
+        }
+    },
     "web_accessible_resources": [
         {
             "resources": ["css/*.css"],
-            "extension_ids": ["lohigdpnlkaabdijopklelgffjopnghf"]
+            "matches": [
+                "*://*.glassdoor.com/*",
+                "*://*.glassdoor.com/*",
+                "*://*.glassdoor.com/*",
+                "*://*.glassdoor.com/*",
+                "*://*.glassdoor.com/*",
+                "*://*.glassdoor.com/*",
+                "*://*.glassdoor.com/*",
+                "*://*.glassdoor.com.ar/*",
+                "*://*.glassdoor.com.au/*",
+                "*://nl.glassdoor.be/*",
+                "*://fr.glassdoor.be/*",
+                "*://*.glassdoor.com.br/*",
+                "*://*.glassdoor.ca/*",
+                "*://fr.glassdoor.ca/*",
+                "*://*.glassdoor.de/*",
+                "*://*.glassdoor.es/*",
+                "*://*.glassdoor.fr/*",
+                "*://*.glassdoor.com.hk/*",
+                "*://*.glassdoor.co.in/*",
+                "*://*.glassdoor.ie/*",
+                "*://*.glassdoor.it/*",
+                "*://*.glassdoor.com.mx/*",
+                "*://*.glassdoor.nl/*",
+                "*://*.glassdoor.co.nz/*",
+                "*://*.glassdoor.at/*",
+                "*://de.glassdoor.ch/*",
+                "*://*.glassdoor.sg/*",
+                "*://fr.glassdoor.ch/*",
+                "*://*.glassdoor.co.uk/*",
+                "*://*.glassdoor.com/*"
+            ]
         }
     ],
     "content_scripts": [
@@ -88,5 +123,6 @@
     ],
     "action": {
         "default_popup": "popup.html"
-    }
+    },
+    "run_at": "document_start"
 }
