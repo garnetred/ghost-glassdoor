@@ -1,12 +1,22 @@
 body {
-  overflow: scroll !important;
-  position: initial !important;
+    overflow: scroll !important;
+    position: initial !important;
 }
 
-div[id^="Hardsell"] {
-  display: none !important;
+div[id^='Hardsell'] {
+    display: none !important;
 }
 
-div[id^="hardsell"] {
-  display: none !important;
+div[id^='hardsell'] {
+    display: none !important;
+}
+
+/* removes the limit of review text to one line */
+
+.review-text_isCollapsed__dPlLp {
+    -webkit-line-clamp: none !important;
+}
+
+.expand-button_ExpandButton__Wevvg {
+    display: none !important;
 }
